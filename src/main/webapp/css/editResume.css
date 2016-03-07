@@ -1,0 +1,438 @@
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,legend,button
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../images/bg5.png);
+    font-family:"SimSun","宋体","Arial Narrow";
+}
+ul{
+    list-style: none;
+    margin: 0 ;
+    padding: 0;
+}
+a:link{
+    text-decoration: none !important;
+}
+a:hover{
+    text-decoration: none !important;
+    color: #3B5998;
+    background: transparent;
+}
+a:visited{
+    text-decoration: none !important;
+}
+a:active{
+    text-decoration: none !important;
+}
+p{
+    padding: 0 ;
+    margin: 40px 25px;
+    color: #717171;
+    line-height: 25px;
+}
+textarea{
+    width:100%;/*自动适应父布局宽度*/
+    overflow:auto;
+    word-break:break-all;
+    /*在ie中解决断行问题(防止自动变为在一行显示，主要解决ie兼容问题，ie8中当设宽度为100%时，文本域类容超过一行时，
+    当我们双击文本内容就会自动变为一行显示，所以只能用ie的专有断行属性“word-break或word-wrap”控制其断行)*/
+    resize: none;
+}
+#nav{
+    background: #3B5998;
+    width: 100%;
+    height: 50px;
+}
+
+.navLeft{
+    color: #FFFFFF;
+    float: left;
+    font-size: 25px !important;
+    position: relative;
+    left: 50px;
+    top: -9px;
+}
+
+.navLeft h2{
+    float: left;
+    padding: 0 10px;
+}
+
+.navRight{
+    color: #FFFFFF;
+    float: right;
+    font-size: 25px !important;
+    margin: 0 auto;
+}
+#contactMe{
+    float: left;
+}
+#userInfo{
+    margin: 0;
+    padding: 7px 20px;
+    float: right;
+    font-size: 20px !important;
+    color: #ffffff;
+}
+#userInfo ul{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 160px;
+    min-height: 100px;
+    height: 100%;
+    height: auto;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: rgba(48, 49, 51, 0.75);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+#userInfo ul li{
+    padding: 5px 0;
+    color: #ffffff;
+    background: #3B5998;
+    text-align: left;
+    float: initial;
+}
+#userInfo a{
+    color: #ffffff;
+}
+#userInfo a:hover{
+    background: #3b5998 !important;
+}
+
+.navRight ul{
+    margin: 5px 10px;
+    vertical-align:baseline;
+    height: 50px;
+    text-align: center;
+}
+
+.navRight ul li{
+    float: left;
+    text-align: center;
+    padding: 0 8px;
+    cursor: pointer;
+    background:none !important;
+}
+
+.username{
+
+    position: relative;
+    top: -3px;
+}
+
+.navicon{
+    width: 30px ;
+    height: 30px ;
+    background: #fff ;
+    color: #3B5998;
+    display:inline-block;
+    position:relative;
+    line-height: 30px !important;
+    border-radius: 50%;
+}
+
+.mainContainer{
+    margin: 50px 0;
+    width: 1170px;
+}
+#foot{
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    background: #3B5998;
+    float: left;
+    position: absolute;
+}
+.leftContainer{
+    width: 300px;
+    margin: 10px 0px;
+    position: fixed;
+    background: #ffffff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.resumeName{
+    color: #3B5998;
+    padding: 15px 15px;
+    margin: 5px 0;
+    font-family: '黑体', sans-serif;
+    font-size: 20px;
+    border-bottom: solid 1px skyblue;
+}
+.column{
+    font-size: 20px;
+    font-family: '黑体', sans-serif;
+    color: #3B5998;
+}
+.column ul li{
+     padding: 10px 10px;
+     cursor: pointer;
+    border-bottom: solid 1px lightgray;
+ }
+.column ul li:hover{
+    color: #000000 !important;
+    background: lightgray;
+}
+.column ul li i{
+    width: 30px;
+    margin-right: 20px;
+    text-align: center;
+}
+.column ul li a{
+    cursor: pointer;
+    display: block;
+}
+.column a:hover{
+    color: #ffffff;
+
+}
+.column ul li label{
+    cursor: pointer;
+}
+
+.rightContainer{
+    width: 830px;
+    float: right !important;
+    position: relative;
+    margin: 10px 0;
+    background: #ffffff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.contentPanel{
+    background: #ffffff;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+    display: block;
+    padding-bottom: 30px;
+}
+.aboutMe{
+
+    margin:20px 0;
+
+}
+.tittle{
+    margin: 10px;
+}
+.tittle h2{
+    width: 150px;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    color: #3B5998;
+    margin: 0 0 10px 0;
+    float: left;
+}
+
+.tittle hr{
+    background: #3B5998;
+    height: 2px;
+    border: none;
+    border-top: 3px groove skyblue;
+    margin-top: 10px;
+    clear: both;
+}
+.modify{
+    font-size: 15px;
+    float: right;
+    margin: 10px 20px;
+    color: #3B5998;
+    cursor: pointer;
+}
+.info ul{
+
+    line-height: 28px;
+    font-family: 黑体;
+}
+.info ul li{
+    border-bottom: 1px solid #F5EFEF;
+    font-size: 15px;
+    font-weight: 20px;
+}
+.info ul li i{
+    width: 20px;
+    margin-right: 3px;
+    text-align: center;
+    color: #3B5998;
+    font-weight: normal;
+}
+.info ul li label{
+    margin: 0;
+    color: #3B5998;
+    font-weight: normal;
+}
+.value{
+    width: 200px;
+    text-align: left;
+    float: right;
+    color: #717171;
+}
+.review{
+    clear: both;
+}
+
+.photo{
+    float: left;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.photo img{
+    border-radius: 20px;
+}
+
+.contentTittle{
+    display: inline-block;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #FFF;
+    margin-left: 15px;
+}
+.contentTittle:after{
+    height: 1px;
+    display: block;
+    left: 0;
+    content: " ";
+    position: relative;
+    /*width: 30px;*/
+    top: 1px;
+    background: #3B5998;
+}
+.contentText{
+    display: inline-block;
+    float: left;
+    font-family: '黑体', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-top: 2px;
+    margin-bottom: 5px;
+    color: #3B5998;
+}
+.duration{
+    float: right;
+    color: #717171;
+}
+.color{
+    color: #3B5998;
+}
+.clear{
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+#eduExp ul li h5{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3B5998;
+}
+#eduExp .info ul li {
+    border-bottom: none;
+}
+#eduExp ul li h6{
+
+    font-family: '黑体', sans-serif;
+}
+.major{
+    float: right;
+}
+.skillbarTittle{
+    position: absolute;
+    color: #fff;
+    background: rgba(59, 89, 152, 0.8);
+    top: 0;
+    left: 0;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+.skillbarTittle span{
+    display: block;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, 0.1);
+    height: 22px;
+    line-height: 22px;
+}
+.skillbar{
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: rgba(177, 171, 171, 0.36);
+    height: 22px;
+
+}
+.skillbarBar{
+    width: 0px;
+    height: 22px;
+    background: rgba(59, 89, 152, 0.8);
+}
+
+.skillbarPercent{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 22px;
+    line-height: 22px;/*35*/
+    color: #444;
+    color: rgba(0, 0, 0, 0.4);
+}
+#WorkExp ul li h5{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3B5998;
+}
+#WorkExp .info ul li {
+    border-bottom: none;
+}
+
+#ProjExp ul li h5{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3B5998;
+}
+#sourceImg{
+    width: 400px;
+    height: 300px;
+    float: left;
+    background: lightgray;
+    text-align: center;
+}
+#sourceImg div{
+    margin: 0 auto;
+}
+.preview{
+    width:295px;
+    height:412px;
+    overflow:hidden;
+    border:1px solid gray;
+    position: relative;
+    left: 122px;
+}
+.uploatFile{
+    width: 130px;
+    height: 38px;
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    opacity: 0;
+}

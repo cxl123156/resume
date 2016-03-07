@@ -1,0 +1,465 @@
+body{
+  background-image: url(../images/bg5.png);
+}
+
+#wrapper{
+  width: 1129px;
+  margin: 50px auto;
+  overflow:hidden;
+}
+#personalInfo{
+  opacity: 1;
+}
+#userInfo{
+  margin: 0;
+  padding: 7px 20px;
+  float: right;
+  font-size: 20px !important;
+  color: #ffffff;
+}
+#userInfo ul{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 160px;
+  min-height: 100px;
+  height: 100%;
+  height: auto;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: rgba(48, 49, 51, 0.75);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+#userInfo ul li{
+  padding: 5px 0;
+  color: #ffffff;
+  background: #3B5998;
+  text-align: left;
+  float: initial;
+}
+#userInfo a{
+  color: #ffffff;
+}
+#userInfo a:hover{
+  background: #3b5998 !important;
+}
+.content{
+  width: 100%;
+  overflow: hidden;
+}
+#contactMe{
+  float: left;
+}
+
+.skillbarTittle{
+  position: absolute;
+  color: #fff;
+  background: rgba(59, 89, 152, 0.8);
+  top: 0;
+  left: 0;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+.skillbarTittle span{
+  display: block;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.1);
+  height: 22px;
+  line-height: 22px;
+}
+.skillbar{
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  background: rgba(177, 171, 171, 0.36);
+  height: 22px;
+
+}
+.skillbarBar{
+  width: 0px;
+  height: 22px;
+  background: rgba(59, 89, 152, 0.8);
+}
+
+.skillbarPercent{
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 22px;
+  line-height: 22px;/*35*/
+  color: #444;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+ul{
+  list-style: none;
+  margin: 0 ;
+  padding: 0;
+}
+
+.toolbar {
+  text-align: center;
+  float: left;
+  vertical-align: baseline;
+  display: none;
+}
+
+
+.toolbar ul li{
+  margin: 0;
+  padding: 17px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+  background: #3B5998;
+  cursor: pointer;
+  color:#FFFFFF;
+}
+.toolbarChange{
+  background:#FFFFFF !important;
+  color: #3B5998 !important;
+}
+.toolbarChange i{
+  background: #3B5998 !important;
+  color: #fff !important;
+}
+.toolbar ul li i{
+  font-size: 22px !important;
+  width: 42px !important;
+  height: 42px !important;
+  background: #fff ;
+  color: #3B5998;
+  display:inline-block !important;
+  position:relative;
+  line-height: 42px !important;
+  border-radius: 50%;
+
+}
+#foot{
+  text-align: center;
+}
+#foot label{
+  margin:10px auto;
+}
+#nav{
+  background: #3B5998;
+  width: 100%;
+  height: 50px;
+}
+
+.navLeft{
+  color: #FFFFFF;
+  float: left;
+  font-size: 25px !important;
+  position: relative;
+  left: 50px;
+  top: -9px;
+}
+
+.navLeft h2{
+  float: left;
+  padding: 0 10px;
+}
+
+.navRight{
+  color: #FFFFFF;
+  float: right;
+  font-size: 25px !important;
+  margin: 0 auto;
+}
+
+.navRight ul{
+  margin: 5px 10px;
+  vertical-align:baseline;
+  height: 50px;
+  text-align: center;
+}
+
+.navRight ul li{
+  float: left;
+  text-align: center;
+  padding: 0 8px;
+  cursor: pointer;
+  background:none !important;
+}
+
+.pic{
+  float: left;
+  position: relative;
+  left: 50px;
+  top: -9px;
+}
+
+.username{
+
+  position: relative;
+  top: -3px;
+}
+
+.navicon{
+  width: 30px ;
+  height: 30px ;
+  background: #fff ;
+  color: #3B5998;
+  display:inline-block;
+  position:relative;
+  line-height: 30px !important;
+  border-radius: 50%;
+}
+
+.mainContent{
+  float: left;
+  margin: 0 40px;
+  overflow: hidden;
+}
+
+.contentPanel{
+  background-image: url(../images/soft_wallpaper.png);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+  width: 900px;
+  display: block;
+  opacity: 0;
+  position: absolute;
+}
+
+.photo{
+  float: left;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.photo img{
+  border-radius: 20px;
+}
+.aboutMe{
+
+  margin:20px 30px;
+
+}
+.aboutMe h2{
+  width: 150px;
+  font-size: 30px !important;
+  font-weight: bold !important;
+  color: #3B5998;
+  margin: 0;
+}
+
+.aboutMe hr{
+  background: #3B5998;
+  height: 2px;
+  border: none;
+  border-top: 3px groove skyblue;
+  margin-top: 10px;
+}
+
+.info ul{
+  margin-left: 15px;
+  margin-right: 15px;
+  line-height: 28px;
+  font-family: 黑体;
+}
+.info ul li{
+  border-bottom: 1px solid #FFFFFF;
+  font-size: 15px;
+}
+.info ul li i{
+  width: 20px;
+  margin-right: 3px;
+  text-align: center;
+  color: #3B5998;
+  font-weight: normal;
+}
+.info ul li label{
+  margin: 0;
+  color: #3B5998;
+  font-weight: normal;
+}
+.value{
+  width: 240px;
+  text-align: left;
+  float: right;
+  color: #717171;
+}
+.review{
+  clear: both;
+}
+.review p{
+  padding: 0 ;
+  margin: 40px 25px;
+  color: #717171;
+  line-height: 25px;
+}
+a:link{
+  text-decoration: none !important;
+}
+a:hover{
+  text-decoration: none !important;
+  color: #3B5998;
+  background: transparent;
+}
+a:visited{
+  text-decoration: none !important;
+}
+a:active{
+  text-decoration: none !important;
+}
+
+.resume{
+  background-image: url(../images/soft_wallpaper.png);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+  width: 900px;
+  z-index: 2;
+  float: left;
+  display: block;
+  opacity: 0;
+  position: absolute;
+}
+
+#foot{
+  color: #ffffff;
+  width: 100%;
+  height: 50px;
+  background: #3B5998;
+  float: left;
+}
+@media screen and (max-width: 991px){
+  #wrapper{
+    width:100%;
+  }
+  .info{
+    width: 60%;
+    float: left;
+  }
+  .photo{
+    width: 40%;
+  }
+  .photo img{
+    width:90%;
+  }
+  .contentPanel{
+    width: 100%;
+    display: block;
+    opacity: 0;
+  }
+  .navLeft{
+    position: relative;
+    left: 0px;
+  }
+  .navLeft h2{
+    padding: 0 5px;
+  }
+  .mainContent{
+    float: none;
+    margin: 0 auto;
+  }
+  .toolbar{
+    width: 100%;
+    float: left;
+    margin-top: 16px;
+    margin-bottom: 11px;
+  }
+  .toolbar ul li{
+    height: 80px;
+    padding:30px;
+    display: inline;
+  }
+  #foot{
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px){
+  #wrapper{
+    width:100%;
+  }
+  .info{
+    width: auto;
+    float: left;
+  }
+  .navLeft{
+    position: relative;
+    left: 0px;
+  }
+  .navLeft h2{
+    padding: 0 5px;
+  }
+  .mainContent{
+    margin: 0 auto;
+  }
+  .photo{
+    display: none;
+  }
+  .toolbar{
+    width: 100%;
+    float: left;
+    margin-top: 16px;
+    margin-bottom: 11px;
+  }
+  .toolbar ul li{
+    height: 80px;
+    padding:30px;
+    display: inline;
+  }
+  .contentPanel{
+    width: 100%;
+    opacity: 1;
+  }
+  #foot{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 450px){
+  #wrapper{
+    width:100%;
+    margin-bottom: 0px;
+  }
+  .value{
+    width: 10em;
+  }
+  .toolbar{
+    margin-bottom: 0px;
+  }
+  .toolbar ul li{
+    height: 80px;
+    display: inline;
+    float: left;
+    width: 25%;
+    padding:20px;
+  }
+  .navRight{
+    display: none;
+  }
+  #foot{
+    position: static;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .value{
+    width: 8em;
+  }
+  .toolbar ul li{
+    padding: 5.9%;
+    height: 80px;
+    display: inline;
+    float: left;
+  }
+  .navRight{
+    display: none;
+  }
+  #foot{
+    margin: 0;
+    float: left;
+  }
+}

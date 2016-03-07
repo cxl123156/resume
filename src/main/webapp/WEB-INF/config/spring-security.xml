@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security-4.0.xsd">
+       <security:http auto-config="true" use-expressions="true" >
+
+           <security:intercept-url pattern="/index.jsp" access="hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')"></security:intercept-url>
+           <security:intercept-url pattern="/user/*" access="hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')"></security:intercept-url>
+           <security:intercept-url pattern="/resumeContext/*" access="hasRole('ROLE_ADMIN')"></security:intercept-url>
+              <!--<security:intercept-url pattern="/index.jsp" access="hasRole('ROLE_USER')"></security:intercept-url>-->
+              <!--<security:access-denied-handler error-page="/error.jsp"></security:access-denied-handler>-->
+              <security:form-login login-page="/login.jsp" authentication-failure-url="/user/error.do?error=1" username-parameter="username"
+                           password-parameter="password" />
+              <security:logout logout-url="/logout" logout-success-url="/login.jsp" invalidate-session="true"   />
+           <security:csrf disabled="true"></security:csrf>
+       </security:http>
+
+       <!-- 配置一个认证管理器 -->
+       <security:authentication-manager>
+              <security:authentication-provider>
+                     <security:jdbc-user-service data-source-ref="dataSource"
+                               users-by-username-query="SELECT username username, password password, enabled enabled FROM T_USER WHERE username=?"
+                             authorities-by-username-query="select u.username username, r.role role FROM
+T_USER u , T_USER_GROUP ug , T_ROLE_GROUP rg ,T_ROLE r where u.username = ? and u.id = ug.userId and ug.groupId = rg.groupId and rg.roleId = r.id"></security:jdbc-user-service>
+                     <!--<security:user-service>-->
+                            <!--&lt;!&ndash; 这样的配置表示向系统中添加了一个用户 用户名和密码都为admin ,并且该用户拥有ROLE_USER角色（角色可以用逗号隔开） &ndash;&gt;-->
+                            <!--<security:user name="admin" password="admin" authorities="ROLE_USER"/>-->
+                            <!-- -->
+                     <!--</security:user-service>-->
+              </security:authentication-provider>
+       </security:authentication-manager>
+</beans>
